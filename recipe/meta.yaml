@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
     - dask
     - hyperspy >=1.5.2
     - h5py
-    - matplotlib
+    - matplotlib-base
     - numpy >=1.17
     - pyxem >=0.10
     - scikit-image
