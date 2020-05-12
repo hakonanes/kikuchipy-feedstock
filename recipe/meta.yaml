@@ -1,5 +1,5 @@
 {% set name = "kikuchipy" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1794216f906000308870d1d329333bd027c6b62b11dff5b63a1837ca180d65fd
+  sha256: 1e7314ca80f29febe5691aeee038ddefb806b5487e2f9a1797e94e0924775b3f
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - matplotlib
     - numpy >=1.17
     - pyxem >=0.10
-    - scikit-image
+    - scikit-image >0.16,< 0.17
     - scikit-learn
     - scipy
 
@@ -40,7 +40,7 @@ test:
 
 about:
   home: https://github.com/kikuchipy/kikuchipy
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
   summary: |
