@@ -16,17 +16,18 @@ build:
 
 requirements:
   host:
-    - python >=3
     - pip
+    - python >=3
   run:
     - python >=3
-    - dask[array]
-    - hyperspy[learning] >=1.5.2
+    - dask
+    - hyperspy >=1.5.2
     - h5py
     - matplotlib
     - numpy >=1.17
     - pyxem >=0.10
     - scikit-image >=0.16,<0.17
+    - scikit-learn
     - scipy >=1.4
 
 test:
