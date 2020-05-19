@@ -26,8 +26,8 @@ requirements:
     - matplotlib
     - numpy >=1.17
     - pyxem >=0.10
-    - scikit-image >0.16,<0.17
-    - scipy
+    - scikit-image >=0.16,<0.17
+    - scipy >=1.4
 
 test:
   requires:
