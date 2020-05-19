@@ -1,13 +1,13 @@
 About kikuchipy
 ===============
 
-Home: https://github.com/kikuchipy/kikuchipy
+Home: https://kikuchipy.org
 
-Package license: GPL-3.0
+Package license: GPL-3.0-or-later
 
 Feedstock license: BSD 3-Clause
 
-Summary: KikuchiPy is an open-source Python library for processing and analysis of
+Summary: kikuchipy is an open-source Python library for processing and analysis of
 electron backscatter diffraction (EBSD) patterns
 
 
