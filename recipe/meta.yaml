@@ -1,5 +1,5 @@
 {% set name = "kikuchipy" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2b03a20deb396bc3510bcc2d564422e82e1d552848f8f07e1b9a9b4c95189af6
+  sha256: 995c38fbd18c9f22da8941174cc74d7d702f37b391730c3e4093add952ba6591
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
@@ -25,16 +25,22 @@ requirements:
     - h5py
     - matplotlib
     - numpy >=1.17
-    - pyxem >=0.10
     - scikit-image >=0.16,<0.17
     - scikit-learn
-    - scipy >=1.4
+    - scipy
 
 test:
   requires:
     - pytest >=5.3.2
   imports:
     - kikuchipy
+    - kikuchipy.filters
+    - kikuchipy.generators
+    - kikuchipy.io
+    - kikuchipy.pattern
+    - kikuchipy.pattern.chunk
+    - kikuchipy.signals
+    - kikuchipy.release
   commands:
     - pytest --pyargs kikuchipy
 
