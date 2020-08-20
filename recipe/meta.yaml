@@ -52,7 +52,7 @@ about:
     kikuchipy is an open-source Python library for processing and analysis of
     electron backscatter diffraction (EBSD) patterns
   doc_url: https://kikuchipy.org
-  dev_url: https://github.com/kikuchipy/kikuchipy
+  dev_url: https://github.com/pyxem/kikuchipy
 
 extra:
   recipe-maintainers:
